@@ -30,19 +30,27 @@ var mantras = [
 'Onward and upward.',
 'I am the sky, the rest is weather.',
 ]
-
-
-
 var affirmation = document.querySelector('#affirmation')
 var mantra = document.querySelector('#mantra')
 var receiveButton = document.querySelector('.receive-button')
 var messageBox = document.querySelector('.message-section')
 
-
-
-messageBox.addEventListener('click', showMessage)
+receiveButton.addEventListener('click', showMessage)
 
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
   }
 
+  function showMessage(event) {
+    event.preventDefault()
+    if(affirmation.checked === true) {
+        var randomAffirmation = getRandomIndex(affirmations)
+        messageBox.innerHTML = `<h3>${affirmations[randomAffirmation]}</h3>`
+    }
+    else if(mantra.checked === true) {
+        var randomMantra = getRandomIndex(mantras)
+        messageBox.innerHTML = `<h3>${mantras[randomMantra]}</h3>`
+    } else {
+        alert('Please select affirmation or mantra')
+    }
+}
