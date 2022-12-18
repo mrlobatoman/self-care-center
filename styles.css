@@ -28,21 +28,53 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-size: 1.2em;
+    margin-bottom: 20%;
+}
+
+h2 {
+    font-size: .9em;
+}
+
 button {
     background: #134d71;
-    border-radius: 5px
+    border-radius: 5px;
+    color: white;
  }
   
+
+input {
+    font-size: .2em;
+}
+
  .input-box {
     background: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 10px;
     color: #000000;
-    height: 100px;
-    width: 60%;
+    height: 10vh;
+    width: 45vw;
   }
  
-
+ 
+  .input-box2 {
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    color: #000000;
+    height: 20vh;
+    width: 65vw;
+    margin-top: 10vh;
+  }
+ 
+img {
+height: auto;
+width: auto;
+max-width: 40px;
+max-height: 40px;
+margin-top: 3%;
+}
 
 
 
